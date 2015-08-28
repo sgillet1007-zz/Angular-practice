@@ -1,0 +1,22 @@
+
+form(ng-submit="addAnimal()")
+	input(placeholder="Name", ng-model="newAnimal.name")
+	div
+	input(placeholder="Coloring", ng-model="newAnimal.coloring")
+	div
+	input(placeholder="Calories", ng-model="newAnimal.calories")
+	div
+	input(placeholder="Component Animals", ng-model="newAnimal.componentAnimals")
+
+	input(type="submit")
+
+.animal-list
+	.animal(ng-repeat="animal in animals")
+		h4 {{animal.name}}
+		p Coloring in the wild : {{animal.coloring}}
+		p Calories in this tasty animal : {{animal.calories}}
+		ul
+			li(ng-repeat="component in animal.componentAnimals") {{component}}
+
+
+
