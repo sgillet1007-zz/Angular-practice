@@ -22,6 +22,6 @@ app.delete('/api/animals/:id', apiController.delete);
 
 
 
-var server = app.listen(4321, function() {
+var server = app.listen(4322, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });

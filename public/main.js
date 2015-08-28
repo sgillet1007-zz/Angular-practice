@@ -8,12 +8,10 @@ cryptApp.config(function($routeProvider){
 			templateUrl : '/templates/cryptanimallist',
 			controller  : 'cryptAnimalList'
 		})
-
 });
 
 // AnimalFactory creation
 cryptApp.factory('animalFactory', function($resource){
-
 	// This creates a $resource model
 	// Our base URL is /api/animals with the option of additionally passing the /:id component
 	// All the methods this $resource model uses will be in reference to those URLs
